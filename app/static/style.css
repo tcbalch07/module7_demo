@@ -1,0 +1,21 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ADD8E6; /* Light blue background */
+    text-align: center; /* Center all text on the page */
+}
+
+/* Navigation bar styling */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container for main content */
+.container {
+    margin-top: 50px;
+    text-align: center; /* Ensure the content inside is centered */
+}
+
+/* Add more styles as needed from the original base.html */

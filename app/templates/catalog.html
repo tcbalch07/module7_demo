@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Book Catalog{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Book Catalog</h1>
+<div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="{{ url_for('static', filename='Forged.jpg') }}" class="card-img-top" alt="Forged by Bart Ehrman">
+                <div class="card-body">
+                    <p class="card-text price">$15.99</p>
+                    <p class="card-title title">Forged</p>
+                    <p class="card-text author">by Bart Ehrman</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="{{ url_for('static', filename='SimplyJesus.jpg') }}" class="card-img-top" alt="Simply Jesus by NT Wright">
+                <div class="card-body">
+                    <p class="card-text price">$14.99</p>
+                    <p class="card-title title">Simply Jesus</p>
+                    <p class="card-text author">by NT Wright</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="{{ url_for('static', filename='Anthony.jpg') }}" class="card-img-top" alt="What I Believe by Anthony Kenny">
+                <div class="card-body">
+                    <p class="card-text price">$11.99</p>
+                    <p class="card-title title">What I Believe</p>
+                    <p class="card-text author">by Anthony Kenny</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="{{ url_for('static', filename='Friedman.jpg') }}" class="card-img-top" alt="Who Wrote The Bible by Richard Elliot Friedman">
+                <div class="card-body">
+                    <p class="card-text price">$20.99</p>
+                    <p class="card-title title">Who Wrote The Bible?</p>
+                    <p class="card-text author">by Richard Elliot Friedman</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="{{ url_for('static', filename='Hitchens.jpg') }}" class="card-img-top" alt="God is Not Great by Christopher Hitchens">
+                <div class="card-body">
+                    <p class="card-text price">$10.99</p>
+                    <p class="card-title title">God is Not Great</p>
+                    <p class="card-text author">by Christopher Hitchens</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="{{ url_for('static', filename='Lewis.jpg') }}" class="card-img-top" alt="Mere Christianity by CS Lewis">
+                <div class="card-body">
+                    <p class="card-text price">$12.99</p>
+                    <p class="card-title title">Mere Christianity</p>
+                    <p class="card-text author">by CS Lewis</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="{{ url_for('static', filename='DaleAllison.jpg') }}" class="card-img-top" alt="The Resurrection of Jesus by Dale Allison Jr.">
+                <div class="card-body">
+                    <p class="card-text price">$19.99</p>
+                    <p class="card-title title">The Resurrection of Jesus</p>
+                    <p class="card-text author">by Dale Allison Jr.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="{{ url_for('static', filename='Turek.jpg') }}" class="card-img-top" alt="I don't have enough faith to be an Atheist by Frank Turek">
+                <div class="card-body">
+                    <p class="card-text price">$16.99</p>
+                    <p class="card-title title">I Don't Have Enough Faith to Be an Atheist</p>
+                    <p class="card-text author">by Frank Turek</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
